@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <p id="p1"> if you double click on me , i will disapper .</p>
+<input type="text" id="input">
+    
+</body>
+<script>
+     $(document).ready(function(){
+    //     $("#p1").dblclick(function(){
+    //         $(this).hide();
+    //     });
+    
+    // $("#p1").mouseenter(function(){
+    //     alert("you enter the text ");
+    //     });
+    
+    // $("#p1").mousedown(function(){
+    //     alert("mouse down over p1! ");
+    //     });
+    // $("#p1").hover(function(){
+    //      alert("you entered text ");
+    //    });
+    //    $("#p1").hover(function(){
+    //      alert("you entered text ");
+    //    });
+    // $("input").keydown(function(){
+    //     $("input").css("background-color", "green");
+    //     });
+    // $("input").keyup(function(){
+    //     $("input").css("background-color", "violet");
+    //     });
+    $(document).ready(function(){
+        $("input").focus(function(){
+        $(this).css("background-color", "yellow");
+        });
+        $("input").blur(function(){
+        $(this).css("background-color", "green");
+        });
+    });
+
+    });
+</script>
+</html>
